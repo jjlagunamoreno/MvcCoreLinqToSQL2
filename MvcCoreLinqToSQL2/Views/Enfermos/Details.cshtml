@@ -1,0 +1,23 @@
+﻿@model Enfermo
+
+<h1 style="color:blue">Details</h1>
+
+<p>
+    <a asp-controller="Enfermos"
+       asp-action="Index">Back to list</a>
+</p>
+
+<ul class="list-group">
+    <li class="list-group-item list-group-item-primary">
+        Apellido: @Model.Apellido
+    </li>
+    <li class="list-group-item list-group-item-danger">
+        Inscripción: @Model.Inscripcion
+    </li>
+    <li class="list-group-item list-group-item-info">
+        Fecha nacimiento: @Model.FechaNacimiento.ToLongDateString()
+    </li>
+    <li class="list-group-item list-group-item-success">
+        Dirección: @Model.Direccion
+    </li>
+</ul>

@@ -8,5 +8,4 @@
         public int Salario { get; set; }
         public int IdDepartamento { get; set; }
     }
-
 }
