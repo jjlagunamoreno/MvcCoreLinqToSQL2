@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MvcCoreLinqToSQL.Models;
 using MvcCoreLinqToSQL.Repositories;
+using MvcCoreLinqToSQL2.Models;
 
 namespace MvcCoreLinqToSQL.Controllers
 {
@@ -34,6 +35,19 @@ namespace MvcCoreLinqToSQL.Controllers
         {
             List<Empleado> empleados = this.repo.GetEmpleadosOficioSalario(oficio, salario);
             return View(empleados);
+        }
+
+        public IActionResult EmpleadosOficio()
+        {
+            ViewData["OFICIOS"] = this.repo.GetOficios();
+            return View();
+        }
+        [HttpPost]
+        public IActionResult EmpleadosOficio(string oficio)
+        {
+            ViewData["OFICIOS"] = this.repo.GetOficios();
+            ResumenEmpleados resumen = this.repo.GetEmpleadosOficio(oficio);
+            return View(resumen);
         }
     }
 }
