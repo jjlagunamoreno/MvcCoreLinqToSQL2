@@ -1,0 +1,38 @@
+﻿@model List<PracticaFinal.Models.Doctor>
+
+<h1>Buscar Doctores por Especialidad</h1>
+
+<form method="post">
+    <label for="especialidad">Especialidad:</label>
+    <select id="especialidad" name="especialidad" class="form-control">
+        @foreach (string especialidad in (List<string>)ViewData["Especialidades"])
+        {
+            <option value="@especialidad">@especialidad</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-primary mt-3">Buscar</button>
+</form>
+
+@if (Model != null && Model.Count > 0)
+{
+    <h2>Resultados para @ViewData["EspecialidadSeleccionada"]</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Apellido</th>
+                <th>Especialidad</th>
+                <th>Salario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doctor in Model)
+            {
+                <tr>
+                    <td>@doctor.Apellido</td>
+                    <td>@doctor.Especialidad</td>
+                    <td>@doctor.Salario</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

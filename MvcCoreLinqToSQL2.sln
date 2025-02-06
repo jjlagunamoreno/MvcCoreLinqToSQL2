@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCoreLinqToSQL2", "MvcCoreLinqToSQL2\MvcCoreLinqToSQL2.csproj", "{BD775CFF-12A0-4E04-A343-6CB3BCD6DD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaFinal", "PracticaFinal\PracticaFinal.csproj", "{8B848308-0D4E-4476-A085-E219AD8E88CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BD775CFF-12A0-4E04-A343-6CB3BCD6DD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD775CFF-12A0-4E04-A343-6CB3BCD6DD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD775CFF-12A0-4E04-A343-6CB3BCD6DD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B848308-0D4E-4476-A085-E219AD8E88CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B848308-0D4E-4476-A085-E219AD8E88CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B848308-0D4E-4476-A085-E219AD8E88CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B848308-0D4E-4476-A085-E219AD8E88CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
